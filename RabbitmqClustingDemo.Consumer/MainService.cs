@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SSharing.Frameworks.RabbitMQ;
-using RabbitmqClustingDemo.Common;
 using RabbitmqClustingDemo.Entity;
 
 namespace RabbitmqClustingDemo.Consumer
@@ -15,8 +14,7 @@ namespace RabbitmqClustingDemo.Consumer
         public MainService()
         {
             //rabbitmq初始化
-            var rabbitmqConfig = RabbitMQHelper.GetRabbitMQConfig();
-            rabbitmqProxy = new RabbitMQWrapper(rabbitmqConfig);
+            rabbitmqProxy = RabbitMQWrapper.Instance;
         }
 
         public bool Start()

@@ -6,7 +6,6 @@ using SSharing.Frameworks.Common.Extends;
 using RabbitmqClustingDemo.Entity;
 using SSharing.Frameworks.Configurations;
 using SSharing.Frameworks.RabbitMQ;
-using RabbitmqClustingDemo.Common;
 using Topshelf;
 
 namespace RabbitmqClustingDemo.Consumer

@@ -69,10 +69,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RabbitmqClustingDemo.Common\RabbitmqClustingDemo.Common.csproj">
-      <Project>{2127cac8-4ea9-4464-9dd3-1ba426e733e3}</Project>
-      <Name>RabbitmqClustingDemo.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RabbitmqClustingDemo.Entity\RabbitmqClustingDemo.Entity.csproj">
       <Project>{5cb6b965-09d7-4234-a5af-89257002d6ea}</Project>
       <Name>RabbitmqClustingDemo.Entity</Name>
