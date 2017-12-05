@@ -16,7 +16,7 @@ namespace RabbitmqClustingDemo.Producer
         static void Main(string[] args)
         {
             Console.WriteLine("开始往集群中发布消息...");
-            using (var rabbitmqProxy = RabbitMQWrapper.Instance)
+            using (var rabbitmqProxy = new RabbitMQWrapper())
             {
                 for (int i = 0; i < Int32.MaxValue; i++)
                 {

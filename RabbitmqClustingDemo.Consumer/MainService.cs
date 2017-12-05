@@ -14,7 +14,7 @@ namespace RabbitmqClustingDemo.Consumer
         public MainService()
         {
             //rabbitmq初始化
-            rabbitmqProxy = RabbitMQWrapper.Instance;
+            rabbitmqProxy = new RabbitMQWrapper();
         }
 
         public bool Start()
